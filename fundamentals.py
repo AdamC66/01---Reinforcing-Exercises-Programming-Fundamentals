@@ -1,5 +1,5 @@
 import random
-from random import randrange
+# from random import randrange
 # Exercise 1
 # Create an emotions dict, where the keys are the names of different human emotions and the values are the degree to which the emotion is being felt on a scale from 1 to 3.
 
@@ -32,7 +32,7 @@ class Person:
     def message(self):
         return(f'{self.name} is feeling {self.emotion_level()} {self.rand_emotion()} today')
     def emotion_level(self):
-        x = randrange(3)
+        x = random.randrange(3)
         if x == 0:
             return "a little"
         elif x==1:
